@@ -3,38 +3,66 @@ import $ from 'jquery';
 fetch('../public/assets/data/questions.json')
   .then((questions) => questions.json())
   .then((data) => {
-    // target le body
-    const monBody = $('body');
-
-    // pour chaque question créer une div coloré par le css
+    // pour chaque question créer une div colorée par le css
+    // /////////////////////////////////////////////////////
     data.questions.forEach((question) => {
-      monBody.append(`<section id="question${question.id}"></section>`);
-    });
-
-    // créer div qui accueillera les questions
-    const maQuestion = $('<div id="maQuestion"></div>');
-    maQuestion.append(`
-      <p id="${data.questions[0].id}">${data.questions[0].question}</p>
-      <div>
-      </div>
-    `);
-
-    data.questions[0].reponses.forEach((reponse) => {
-      // console.log(reponse.rep);
-      $(maQuestion.children()[1]).append(`
-      <p class="response">${reponse.rep}</p>
-      `);
-    });
-
-    // ajouter la question au body
-    monBody.append(maQuestion);
-
-    $('.response').click(function () {
-      console.log($(this).parent().parent().children()[0]);
-      // $(this.parent().parent().children()[0]).
+      $('body').append(`<section id="question${question.id}"></section>`);
     });
 
 
-    // append la premiere question
-    // maQuestion.append(`<p>${data.questions[0].question}</p>`);
+    // compteur pour l'id
+    // //////////////////
+    let prochainId = 0;
+
+
+    // récolter données
+    // ////////////////
+    let game = 0;
+    let wad = 0;
+    let web = 0;
+
+    const lesReponse = [];
+
+
+    // passer d'une question à l'autre
+    // ///////////////////////////////
+    $('#soumettre').click(() => {
+      // si page d'acceuil
+      if ($('#soumettre').text() === 'Allons-y !') {
+        // changer texte du bouton
+        $('#soumettre').text('suivant');
+        // sinon incrémenter le prochain id
+      } else {
+        prochainId += 1;
+      }
+
+      // changer de fond de façon smooth
+      $('html,body').animate({
+        scrollTop: $(`#question${prochainId}`).offset().top,
+      }, 1000);
+
+      // aller à la question (suivante)
+      // afficher la question
+      $('#affichage p').text(data.questions[prochainId].question);
+
+      // et ses réponses
+      $('#lesReponses').empty();
+      (data.questions[prochainId].reponses).forEach((reponse) => {
+        $('#lesReponses').append(
+          `<div>
+            <input type="radio" id="question${data.questions[prochainId].id}" value="" name="">
+            <label for="${reponse.rep}">${reponse.rep}</label>
+            </div>`,
+        );
+        console.log(`question #${data.questions[prochainId].id + 1}`);
+      });
+      console.log(game, wad, web);
+      game += data.questions[prochainId].reponses[0].game;
+      wad += data.questions[prochainId].reponses[0].wad;
+      web += data.questions[prochainId].reponses[0].web;
+      // à changer lsq bouron radion sera réparé
+      lesReponse.push([(data.questions[prochainId].question), (data.questions[prochainId].reponses[0].rep)]);
+      console.log(game, wad, web);
+      console.log(lesReponse);
+    });
   });

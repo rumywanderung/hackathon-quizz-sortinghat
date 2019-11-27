@@ -1,27 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
 section{
     height: 100vh;
     width:100vw;
 }
-section:nth-child(odd){
-    background-color: blue;
-}
 section:nth-child(even){
-    background-color: chocolate;
+    background-color: #f0667e;
 }
 
-#maQuestion {
+section:nth-child(odd){
+    background-color: #ffc8b8;
+}
+
+#affichage {
     position: fixed;
     top: 5vh;
     left: 50%;
     transform: translateX(-50%);
     width: 75vw;
     height: 45vh;
-    background-color: aqua;
+    background-color: #fef3e9;
     margin: 0 auto;
     text-align: center;
     font-size: 1rem;
 }
 
-#maQuestion > div p {
+#affichage > div p {
     text-align: left;
 }
+
+#affichage > p {
+    margin: 4% 0 3%;
+}
+
+#lesReponses div {
+    margin-bottom: 1.5%;
+    color: #f0667e;
+}
+
+#soumettre {
+    background-color: lightgray;
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+    transform: translateX(50%);
+    width: 50%;
+    padding: 0.5rem 0;
+    border: dashed coral;
+}
+
+#soumettre:hover {
+    background-color: coral;
+}
+
+select, input, textarea {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+input[type="radio"] { -webkit-appearance: radio !important; }
+input[type="radio"] {
+    height:16px !important;
+    -moz-appearance: radio !important;
+    }
