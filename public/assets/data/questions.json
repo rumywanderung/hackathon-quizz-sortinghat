@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "id": 0,
+            "question": "Sur lequel des aspects suivants accorderais-tu le plus de temps ? ",
+            "reponses": [
+                {
+                    "rep":"L’expérience utilisateur au top. " ,
+                    "game": 1,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": "L’anticipation de possibles bugs." ,
+                    "game": 1,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": "L’aspect visuel dont on se souviendra. ",
+                    "game": 1,
+                    "wad": 2,
+                    "web": 1
+                }
+            ]
+        }, 
+        {
+            "id": 1,
+            "question": "Point de vue organisation, comment te situes-tu ? ",
+            "reponses": [
+                {
+                    "rep": "Einstein n’a-t-il pas dit : \"Si la vue d'un bureau encombré évoque un esprit encombré alors que penser de celle d'un bureau vide ?\"… à bon entendeur… ",
+                    "game": 1,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": "Les todos listes c’est mon dada.",
+                    "game": 1,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": "Entre minimalisme et anarchie, mon cœur balance.",
+                    "game": 1,
+                    "wad": 2,
+                    "web": 1
+                }
+            ]
+        }, 
+        {
+            "id": 2,
+            "question": "Es-tu gameuse ? ",
+            "reponses": [
+                {
+                    "rep": "Ca m’est arrivé, Mario quelques chose je crois…",
+                    "game": 1,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": "Ce qualificatif a été inventé pour moi. ",
+                    "game": 1,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": " A mes heures perdues. ",
+                    "game": 1,
+                    "wad": 2,
+                    "web": 1
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+
+

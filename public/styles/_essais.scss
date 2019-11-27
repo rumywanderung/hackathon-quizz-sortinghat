@@ -1,0 +1,22 @@
+section{
+    height: 100vh;
+    width:100vw;
+}
+section:nth-child(odd){
+    background-color: blue;
+}
+section:nth-child(even){
+    background-color: chocolate;
+}
+
+#maQuestion {
+    position: fixed;
+    top: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75vw;
+    height: 45vh;
+    background-color: aqua;
+    margin: 0 auto;
+    font-size: 2rem;
+}
