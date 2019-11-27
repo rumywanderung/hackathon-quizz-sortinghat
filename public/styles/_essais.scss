@@ -18,5 +18,10 @@ section:nth-child(even){
     height: 45vh;
     background-color: aqua;
     margin: 0 auto;
-    font-size: 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#maQuestion > div p {
+    text-align: left;
 }
