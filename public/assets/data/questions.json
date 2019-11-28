@@ -35,7 +35,7 @@
                     "web": 3
                 },
                 {
-                    "rep": "Les todos listes c’est mon dada.",
+                    "rep": "Les to do list c’est mon dada.",
                     "game": 1,
                     "wad": 2,
                     "web": 4
@@ -65,7 +65,247 @@
                     "web": 1
                 },
                 {
-                    "rep": " A mes heures perdues. ",
+                    "rep": "A mes heures perdues. ",
+                    "game": 7,
+                    "wad": 2,
+                    "web": 1
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "Ne pas voir le résultat de ta production directement …  ",
+            "reponses": [
+                {
+                    "rep": "Ne te dérange pas plus que ça. ",
+                    "game": 5,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": "Quel intérêt ?! Je ne suis pas aveugle ! ",
+                    "game": 6,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": " Pour moi c'est primordial. ",
+                    "game": 7,
+                    "wad": 2,
+                    "web": 1
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Aimes-tu l’animation 2D/3D ?  ",
+            "reponses": [
+                {
+                    "rep": "Oui carrément!",
+                    "game": 5,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": "Ce n'est pas ma tasse de thé mais ça ne me dérange pas.",
+                    "game": 6,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": " Ce n'est pas ma priorité.",
+                    "game": 7,
+                    "wad": 2,
+                    "web": 1
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Es-tu prête à retourner à l’école secondaire ?  ",
+            "reponses": [
+                {
+                    "rep": "Quelle horreur ...!",
+                    "game": 5,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": "Je suis motivée, j'adore étudier. ",
+                    "game": 6,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": " Pourquoi pas ! ",
+                    "game": 7,
+                    "wad": 2,
+                    "web": 1
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Quand tu regardes un site internet…  ",
+            "reponses": [
+                {
+                    "rep": "Tu regardes comment le code pourrait être créé.",
+                    "game": 5,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": "Tu baves sur l'aspect visuel. ",
+                    "game": 6,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": " Tu vas droit au but. ",
+                    "game": 7,
+                    "wad": 2,
+                    "web": 1
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Plus tard, tu te vois bien :",
+            "reponses": [
+                {
+                    "rep": "Faire du télétravail, tu préfères dialoguer avec le cerveau de l'ordinateur que les humains.",
+                    "game": 5,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": "Trouver une charte graphique pour le site et suggérer des idées à ton équipe. ",
+                    "game": 6,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": "Tester des jeux, regarder l'aspect image et faire attention au son.  ",
+                    "game": 7,
+                    "wad": 2,
+                    "web": 1
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "Quel est ton mode de pensée, ta manière de fonctionner ?",
+            "reponses": [
+                {
+                    "rep": "Tu aimes te casser la tête devant un problème. ",
+                    "game": 5,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": "Tu visualises facilement le prototype d'un projet. ",
+                    "game": 6,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": "Ça te plait de créer des personnages et de les mettre sur un ring de boxe. ",
+                    "game": 7,
+                    "wad": 2,
+                    "web": 1
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "Le programme est bientôt terminé, l'ordinateur s'éteint tout seul, tu as oublié de sauvegarder les modifications depuis 1heure, que fais tu dans ce genre de situation? ",
+            "reponses": [
+                {
+                    "rep": "Je recommence, je suis une acharnée du travail. ",
+                    "game": 5,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": "Je balance le pc, j'en ai marre.",
+                    "game": 6,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": " Je vais boire un verre, tampis!",
+                    "game": 7,
+                    "wad": 2,
+                    "web": 1
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "Au bout de cette formation tu veux … ",
+            "reponses": [
+                {
+                    "rep": "Un travail et tout de suite.",
+                    "game": 5,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": "Avoir plus de connaissances qu’au day one. ",
+                    "game": 6,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": "Qui a dit que je voulais travailler?",
+                    "game": 7,
+                    "wad": 2,
+                    "web": 1
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "question": "Es tu féministe ?",
+            "reponses": [
+                {
+                    "rep": "Oui j'aime le rose . LOL!",
+                    "game": 5,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": "Non j'aime le bleu.",
+                    "game": 6,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": "Quoi, y'a pas de mec?",
+                    "game": 7,
+                    "wad": 2,
+                    "web": 1
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "question": "Un magazine traîne sur la table, que lirais tu ? ",
+            "reponses": [
+                {
+                    "rep": "Coder pour les nuls.",
+                    "game": 5,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": "S'occuper du visuel d'une maquette.",
+                    "game": 6,
+                    "wad": 2,
+                    "web": 1
+                },
+                {
+                    "rep": "Aujourd'hui, je n'ai pas envie de lire.",
                     "game": 7,
                     "wad": 2,
                     "web": 1
