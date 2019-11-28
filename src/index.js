@@ -83,26 +83,56 @@ fetch('../public/assets/data/questions.json')
 
       if (x === data.questions.length - 1) {
         console.log('fin');
+        $('#soumettre').attr('disabled', true);
         if (game > wad && game > web) {
           if (other > 7) {
-            console.log('OTHER');
+            $('#affichage').html(`
+            <p>
+            Félicitations ! D'après nos estimations, tu ne serais probablement pas trop à ta place dans une des 3 formations que ce quiz propose. Néanmoins, ton intérêt des métiers de l'informatique ne s'arrête pas ici. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/se-former">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. 
+            </p>
+            `);
           } else {
             console.log('GAME');
+            $('#affichage').html(`
+            <p>
+            Félicitations ! D'après nos estimations, tu te plairais à coup sûr dans une formation de Game Developer. En effet ton esprit débordant de créativité, ta passion du storytelling et des expériences ludiques ainsi que ton côté 'débrouillarde' sont des qualités prisées dans l'industrie du jeux vidéo. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/formation/game-developer">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. 
+            </p>
+            `);
           }
         } else if (wad > game && wad > web) {
           if (other > 7) {
-            console.log('OTHER');
+            $('#affichage').html(`
+            <p>
+            Félicitations ! D'après nos estimations, tu ne serais probablement pas trop à ta place dans une des 3 formations que ce quiz propose. Néanmoins, ton intérêt des métiers de l'informatique ne s'arrête pas ici. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/se-former">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. 
+            </p>
+            `);
           } else {
-            console.log('WAD');
+            $('#affichage').html(`
+            <p>
+            Félicitations ! D'après nos estimations, tu te plairais à coup sûr dans une formation de WEB-APPLICATIONS DEVELOPER. En effet ton esprit analytique, ta franchise et ton goût du minimalisme sont des qualités prisées dans ce domaine dit du "back-end". \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/formation/web-application-developer">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. 
+            </p>
+            `);
           }
         } else if (web > wad && web > game) {
           if (other > 7) {
-            console.log('OTHER');
+            $('#affichage').html(`
+            <p>
+            Félicitations ! D'après nos estimations, tu ne serais probablement pas trop à ta place dans une des 3 formations que ce quiz propose. Néanmoins, ton intérêt des métiers de l'informatique ne s'arrête pas ici. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/se-former">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. 
+            </p>
+            `);
           } else {
-            console.log('WEB');
+            $('#affichage').html(`
+            <p>
+            Félicitations ! D'après nos estimations, tu te plairais à coup sûr dans une formation de Webmaster. En effet ton esprit curieux, ta prédisposition pour toutes choses design et ton sens inné de l'harmonie sont des qualités prisées dans ce domaine dit du "front-end".\nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/formation/webmaster">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. 
+            </p>
+            `);
           }
         } else {
-          console.log('OTHER');
+          $('#affichage').html(`
+          <p>
+          Félicitations ! D'après nos estimations, tu ne serais probablement pas trop à ta place dans une des 3 formations que ce quiz propose. Néanmoins, ton intérêt des métiers de l'informatique ne s'arrête pas ici. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/se-former">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. 
+          </p>
+          `);
         }
       }
       game += aAJouterGame;
