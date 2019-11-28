@@ -1,324 +1,355 @@
-{
-    "questions": [
-        {
-            "id": 0,
-            "question": "Sur lequel des aspects suivants accorderais-tu le plus de temps ? ",
-            "reponses": [
-                {
-                    "rep":"L’expérience utilisateur au top. " ,
-                    "game": 1,
-                    "wad": 0,
-                    "web": 1
-                },
-                {
-                    "rep": "L’anticipation de possibles bugs." ,
-                    "game": 1,
-                    "wad": 10,
-                    "web": 1
-                },
-                {
-                    "rep": "L’aspect visuel dont on se souviendra. ",
-                    "game": 1,
-                    "wad": 20,
-                    "web": 1
-                }
-            ]
+{ 
+    "questions": [ 
+        { 
+            "id": 0, 
+            "question": "Sur lequel des aspects suivants accorderais-tu le plus de temps ? ", 
+            "reponses": [ 
+                { 
+                    "rep":"L’expérience utilisateur au top. " , 
+                    "game": 2, 
+                    "wad": 1, 
+                    "web": 2, 
+                    "other": 0
+                }, 
+                { 
+                    "rep": "L’anticipation de possibles bugs. " , 
+                    "game": 1, 
+                    "wad": 2, 
+                    "web": 0, 
+                    "other": 0 
+                }, 
+                { 
+                    "rep": "L’aspect visuel dont on se souviendra. ", 
+                    "game": 2, 
+                    "wad": 1, 
+                    "web": 2, 
+                    "other": 0
+                } 
+            ] 
+        },  
+        { 
+            "id": 1, 
+            "question": "Point de vue organisation, comment te situes-tu ? ", 
+            "reponses": [ 
+                { 
+                    "rep": "Einstein n’a-t-il pas dit : \"Si la vue d'un bureau encombré évoque un esprit encombré alors que penser de celle d'un bureau vide ?\"… à bon entendeur… ", 
+                    "game": 1, 
+                    "wad": 0, 
+                    "web": 2, 
+                    "other": 2
+                }, 
+                { 
+                    "rep": "Les 'to do' list c’est mon dada.", 
+                    "game": 1, 
+                    "wad": 2, 
+                    "web": 1, 
+                    "other": 0
+                }, 
+                { 
+                    "rep": "Entre minimalisme et anarchie, mon cœur balance.", 
+                    "game": 0, 
+                    "wad": 0, 
+                    "web": 0, 
+                    "other": 1
+                } 
+            ] 
+        },  
+        { 
+            "id": 2, 
+            "question": "Es-tu gameuse ? ", 
+            "reponses": [ 
+                { 
+                    "rep": "Ca m’est arrivé, Mario ça me dit quelque chose… ", 
+                    "game": 0, 
+                    "wad": 2, 
+                    "web": 2, 
+                    "other": 1
+                }, 
+                { 
+                    "rep": "Ce qualificatif a été inventé pour moi. ", 
+                    "game": 2, 
+                    "wad": 1, 
+                    "web": 1, 
+                    "other": 0
+                }, 
+                { 
+                    "rep": "A mes heures perdues. ", 
+                    "game": 1, 
+                    "wad": 2, 
+                    "web": 2, 
+                    "other": 0
+                } 
+            ] 
         }, 
-        {
-            "id": 1,
-            "question": "Point de vue organisation, comment te situes-tu ? ",
-            "reponses": [
-                {
-                    "rep": "Einstein n’a-t-il pas dit : \"Si la vue d'un bureau encombré évoque un esprit encombré alors que penser de celle d'un bureau vide ?\"… à bon entendeur… ",
-                    "game": 1,
-                    "wad": 2,
-                    "web": 3
-                },
-                {
-                    "rep": "Les to do list c’est mon dada.",
-                    "game": 1,
-                    "wad": 2,
-                    "web": 4
-                },
-                {
-                    "rep": "Entre minimalisme et anarchie, mon cœur balance.",
-                    "game": 1,
-                    "wad": 2,
-                    "web": 5
-                }
-            ]
+        { 
+            "id": 3, 
+            "question": "Tu viens d'apprendre à coder un petit bout de programme... ", 
+            "reponses": [ 
+                { 
+                    "rep": "J'ai besoin d'un feedback visuel immédiat ! Show me ! ", 
+                    "game": 2, 
+                    "wad": 1, 
+                    "web": 2, 
+                    "other": 0
+                }, 
+                { 
+                    "rep": "Quel intérêt ?! Tant qu'il n'y a pas de bugs, I am happy ! ", 
+                    "game": 1, 
+                    "wad": 2, 
+                    "web": 0, 
+                    "other": 0
+                }, 
+                { 
+                    "rep": " Voir le résultat ou pas, peu m'importe. ", 
+                    "game": 1, 
+                    "wad": 1, 
+                    "web": 0, 
+                    "other": 2 
+                } 
+            ] 
         }, 
-        {
-            "id": 2,
-            "question": "Es-tu gameuse ? ",
-            "reponses": [
-                {
-                    "rep": "Ca m’est arrivé, Mario ça me dit quelque chose…",
-                    "game": 5,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": "Ce qualificatif a été inventé pour moi. ",
-                    "game": 6,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": "A mes heures perdues. ",
-                    "game": 7,
-                    "wad": 2,
-                    "web": 1
-                }
-            ]
-        },
-        {
-            "id": 3,
-            "question": "Ne pas voir le résultat de ta production directement …  ",
-            "reponses": [
-                {
-                    "rep": "Ne te dérange pas plus que ça. ",
-                    "game": 5,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": "Quel intérêt ?! Je ne suis pas aveugle ! ",
-                    "game": 6,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": " Pour moi c'est primordial. ",
-                    "game": 7,
-                    "wad": 2,
-                    "web": 1
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "question": "Aimes-tu l’animation 2D/3D ?  ",
-            "reponses": [
-                {
-                    "rep": "Oui carrément!",
-                    "game": 5,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": "Ce n'est pas ma tasse de thé mais ça ne me dérange pas.",
-                    "game": 6,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": " Ce n'est pas ma priorité.",
-                    "game": 7,
-                    "wad": 2,
-                    "web": 1
-                }
-            ]
-        },
-        {
-            "id": 5,
-            "question": "Es-tu prête à retourner à l’école secondaire ?  ",
-            "reponses": [
-                {
-                    "rep": "Quelle horreur ...!",
-                    "game": 5,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": "Je suis motivée, j'adore étudier. ",
-                    "game": 6,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": " Pourquoi pas ! ",
-                    "game": 7,
-                    "wad": 2,
-                    "web": 1
-                }
-            ]
-        },
-        {
-            "id": 6,
-            "question": "Quand tu regardes un site internet…  ",
-            "reponses": [
-                {
-                    "rep": "Tu regardes comment le code pourrait être créé.",
-                    "game": 5,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": "Tu baves sur l'aspect visuel. ",
-                    "game": 6,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": " Tu vas droit au but. ",
-                    "game": 7,
-                    "wad": 2,
-                    "web": 1
-                }
-            ]
-        },
-        {
-            "id": 7,
-            "question": "Plus tard, tu te vois bien :",
-            "reponses": [
-                {
-                    "rep": "Faire du télétravail, tu préfères dialoguer avec le cerveau de l'ordinateur que les humains.",
-                    "game": 5,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": "Trouver une charte graphique pour le site et suggérer des idées à ton équipe. ",
-                    "game": 6,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": "Tester des jeux, regarder l'aspect image et faire attention au son.  ",
-                    "game": 7,
-                    "wad": 2,
-                    "web": 1
-                }
-            ]
-        },
-        {
-            "id": 8,
-            "question": "Quel est ton mode de pensée, ta manière de fonctionner ?",
-            "reponses": [
-                {
-                    "rep": "Tu aimes te casser la tête devant un problème. ",
-                    "game": 5,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": "Tu visualises facilement le prototype d'un projet. ",
-                    "game": 6,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": "Ça te plait de créer des personnages et de les mettre sur un ring de boxe. ",
-                    "game": 7,
-                    "wad": 2,
-                    "web": 1
-                }
-            ]
-        },
-        {
-            "id": 9,
-            "question": "Le programme est bientôt terminé, l'ordinateur s'éteint tout seul, tu as oublié de sauvegarder les modifications depuis 1heure, que fais tu dans ce genre de situation? ",
-            "reponses": [
-                {
-                    "rep": "Je recommence, je suis une acharnée du travail. ",
-                    "game": 5,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": "Je balance le pc, j'en ai marre.",
-                    "game": 6,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": " Je vais boire un verre, tampis!",
-                    "game": 7,
-                    "wad": 2,
-                    "web": 1
-                }
-            ]
-        },
-        {
-            "id": 10,
-            "question": "Au bout de cette formation tu veux … ",
-            "reponses": [
-                {
-                    "rep": "Un travail et tout de suite.",
-                    "game": 5,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": "Avoir plus de connaissances qu’au day one. ",
-                    "game": 6,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": "Qui a dit que je voulais travailler?",
-                    "game": 7,
-                    "wad": 2,
-                    "web": 1
-                }
-            ]
-        },
-        {
-            "id": 11,
-            "question": "Es tu féministe ?",
-            "reponses": [
-                {
-                    "rep": "Oui j'aime le rose . LOL!",
-                    "game": 5,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": "Non j'aime le bleu.",
-                    "game": 6,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": "Quoi, y'a pas de mec?",
-                    "game": 7,
-                    "wad": 2,
-                    "web": 1
-                }
-            ]
-        },
-        {
-            "id": 12,
-            "question": "Un magazine traîne sur la table, que lirais tu ? ",
-            "reponses": [
-                {
-                    "rep": "Coder pour les nuls.",
-                    "game": 5,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": "S'occuper du visuel d'une maquette.",
-                    "game": 6,
-                    "wad": 2,
-                    "web": 1
-                },
-                {
-                    "rep": "Aujourd'hui, je n'ai pas envie de lire.",
-                    "game": 7,
-                    "wad": 2,
-                    "web": 1
-                }
-            ]
-        }
-    ]
-}
-
-
-
-
-
-
-
-
+        { 
+            "id": 4, 
+            "question": "Es-tu intéressée par l'animation 2D/3D ? ", 
+            "reponses": [ 
+                { 
+                    "rep": "Oui, carrément !", 
+                    "game": 2, 
+                    "wad": 0, 
+                    "web": 1, 
+                    "other": 0
+                }, 
+                { 
+                    "rep": "Ce n'est pas ma tasse de thé, mais ça ne me dérange pas. ", 
+                    "game": 1, 
+                    "wad": 2, 
+                    "web": 1, 
+                    "other": 0
+                }, 
+                { 
+                    "rep": "Ce n'est pas ma priorité. ", 
+                    "game": 0, 
+                    "wad": 0, 
+                    "web": 0, 
+                    "other": 2
+                } 
+            ] 
+        }, 
+        { 
+            "id": 5, 
+            "question": "Serais-tu prête à te remettre à un rythme d'étude de l’école secondaire ?  ", 
+            "reponses": [ 
+                { 
+                    "rep": "Quelle horreur ...! ", 
+                    "game": 0, 
+                    "wad": 0, 
+                    "web": 0, 
+                    "other": 2
+                }, 
+                { 
+                    "rep": "Je suis motivée, j'adore étudier. ", 
+                    "game": 1, 
+                    "wad": 2, 
+                    "web": 1, 
+                    "other": 0
+                }, 
+                { 
+                    "rep": "Pas trop mais, s'il le faut... ", 
+                    "game": 2, 
+                    "wad": 1, 
+                    "web": 1, 
+                    "other": 1
+                } 
+            ] 
+        }, 
+        { 
+            "id": 6, 
+            "question": "Quand tu regardes un site internet… ", 
+            "reponses": [ 
+                { 
+                    "rep": "Tu te demandes de quoi le code aurait l'air. ", 
+                    "game": 2, 
+                    "wad": 2, 
+                    "web": 1, 
+                    "other": 0
+                }, 
+                { 
+                    "rep": "Tu baves sur l'aspect visuel. ", 
+                    "game": 0, 
+                    "wad": 0, 
+                    "web": 2, 
+                    "other": 0
+                }, 
+                { 
+                    "rep": "Tu ne te poses aucune question sur la structure. ", 
+                    "game": 0,
+                    "wad": 0, 
+                    "web": 0, 
+                    "other": 2
+                } 
+            ] 
+        }, 
+        { 
+            "id": 7, 
+            "question": "Plus tard, tu te vois bien :", 
+            "reponses": [ 
+                { 
+                    "rep": "Dialoguer avec plus d'ordinateurs que d'humains, AU QUOTIDIEN S'IL-VOUS-PLAÎT. ", 
+                    "game": 1, 
+                    "wad": 2, 
+                    "web": 1, 
+                    "other": 0
+                }, 
+                { 
+                    "rep": "Concevoir des chartes graphiques pour des sites et suggérer des idées à ton équipe. ", 
+                    "game": 0, 
+                    "wad": 0, 
+                    "web": 2, 
+                    "other": 0 
+                }, 
+                { 
+                    "rep": "Concrétiser des histoires, créer des expériences ludiques.  ", 
+                    "game": 2, 
+                    "wad": 0, 
+                    "web": 1, 
+                    "other": 0 
+                } 
+            ] 
+        }, 
+        { 
+            "id": 8, 
+            "question": "Quel est ton mode de pensée, ta manière de fonctionner ?", 
+            "reponses": [ 
+                { 
+                    "rep": "Tu aimes les casse-tête et résoudre des problèmes. ", 
+                    "game": 1, 
+                    "wad": 2, 
+                    "web": 1, 
+                    "other": 0 
+                }, 
+                { 
+                    "rep": "Tu visualises facilement le prototype d'un projet. ", 
+                    "game": 1, 
+                    "wad": 1, 
+                    "web": 2, 
+                    "other": 0
+                }, 
+                { 
+                    "rep": "Ça te plait de créer des personnages et de les mettre sur un ring de boxe. ", 
+                    "game": 2, 
+                    "wad": 1, 
+                    "web": 1, 
+                    "other": 0
+                } 
+            ] 
+        }, 
+        { 
+            "id": 9, 
+            "question": "Le programme est bientôt terminé, l'ordinateur s'éteint tout seul, tu as oublié de sauvegarder les modifications depuis 1 heure. Que fais-tu dans ce genre de situation ? ", 
+            "reponses": [ 
+                { 
+                    "rep": "Je recommence, je ne me décourage pas. ", 
+                    "game": 1, 
+                    "wad": 2, 
+                    "web": 1, 
+                    "other": 1
+                }, 
+                { 
+                    "rep": "Je balance le pc, j'en ai marre. ", 
+                    "game": 0, 
+                    "wad": 0, 
+                    "web": 0, 
+                    "other": 0
+                }, 
+                { 
+                    "rep": "Je vais boire un verre, tant pis ! ", 
+                    "game": 0, 
+                    "wad": 0, 
+                    "web": 1, 
+                    "other": 2
+                } 
+            ] 
+        }, 
+        { 
+            "id": 10, 
+            "question": "Au bout de cette formation tu veux… ", 
+            "reponses": [ 
+                { 
+                    "rep": "Un travail, et tout de suite ! ", 
+                    "game": 0, 
+                    "wad": 2, 
+                    "web": 1, 
+                    "other": 1 
+                }, 
+                { 
+                    "rep": "Avoir plus de connaissances qu’au premier jour. ", 
+                    "game": 1, 
+                    "wad": 1,
+                    "web": 2, 
+                    "other": 0 
+                }, 
+                { 
+                    "rep": "Qui a dit que je voulais travailler ?", 
+                    "game": 2, 
+                    "wad": 0, 
+                    "web": 1, 
+                    "other": 0
+                } 
+            ] 
+        }, 
+        { 
+            "id": 11, 
+            "question": "Es-tu féministe ?", 
+            "reponses": [ 
+                { 
+                    "rep": "Oui, j'aime le rose. ", 
+                    "game": 0, 
+                    "wad": 0, 
+                    "web": 0, 
+                    "other": 0
+                }, 
+                { 
+                    "rep": "Non j'aime le bleu. ", 
+                    "game": 0, 
+                    "wad": 0, 
+                    "web": 0, 
+                    "other": 0 
+                }, 
+                { 
+                    "rep": "Quoi, y'a pas de mec ? ", 
+                    "game": 0, 
+                    "wad": 0, 
+                    "web": 0, 
+                    "other": 0 
+                } 
+            ] 
+        }, 
+        { 
+            "id": 12, 
+            "question": "Des magazines traînent sur la table, lequel choisis-tu ? ", 
+            "reponses": [ 
+                { 
+                    "rep": "Coder pour les nuls. ", 
+                    "game": 1, 
+                    "wad": 2, 
+                    "web": 1, 
+                    "other": 0
+                }, 
+                { 
+                    "rep": "S'occuper du visuel d'une maquette. ", 
+                    "game": 0, 
+                    "wad": 1, 
+                    "web": 2, 
+                    "other": 0
+                }, 
+                { 
+                    "rep": "Aujourd'hui, je n'ai pas envie de lire. ", 
+                    "game": 2, 
+                    "wad": 0, 
+                    "web": 0, 
+                    "other": 1
+                } 
+            ] 
+        } 
+    ] 
+} 
