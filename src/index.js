@@ -5,9 +5,9 @@ fetch('../public/assets/data/questions.json')
   .then((data) => {
     // pour chaque question créer une div colorée par le css
     // /////////////////////////////////////////////////////
-    data.questions.forEach((question) => {
-      $('body').append(`<section id="question${question.id}"></section>`);
-    });
+    // data.questions.forEach((question) => {
+    //   $('body').append(`<section id="question${question.id}"></section>`);
+    // });
 
 
     // compteur pour l'id
@@ -26,7 +26,7 @@ fetch('../public/assets/data/questions.json')
     let aAjouterWeb = 0;
 
     const lesReponses = [];
-    const infoReponses = [];
+    let infoReponses = 0;
 
 
     // passer d'une question à l'autre
@@ -48,9 +48,9 @@ fetch('../public/assets/data/questions.json')
       // test
       if (x < data.questions.length) {
         // changer de fond de façon smooth
-        $('html,body').animate({
-          scrollTop: $(`#question${prochainId}`).offset().top,
-        }, 1000);
+        // $('html,body').animate({
+        //   scrollTop: $(`#question${prochainId}`).offset().top,
+        // }, 1000);
 
         // aller à la question (suivante)
         // afficher la question
@@ -74,7 +74,7 @@ fetch('../public/assets/data/questions.json')
 
             // console.log(data.questions[prochainId].question, reponse.rep);
 
-            infoReponses[i] = [data.questions[prochainId].question, reponse.rep];
+            infoReponses = [data.questions[prochainId].question, reponse.rep];
           });
 
 

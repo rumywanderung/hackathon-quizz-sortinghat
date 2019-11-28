@@ -4,11 +4,13 @@
 
 body {
     margin: 0;
+    background-color: black;
 }
 
 section{
     height: 100vh;
-    width:100vw;
+    width:80vw;
+    margin: 0 auto;
 }
 section:nth-child(even){
     background-color: red;
