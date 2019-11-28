@@ -20,10 +20,12 @@ fetch('../public/assets/data/questions.json')
     let game = 0;
     let wad = 0;
     let web = 0;
+    let other = 0;
 
     let aAJouterGame = 0;
     let aAjouterWad = 0;
     let aAjouterWeb = 0;
+    let aAjouterOther = 0;
 
     const lesReponses = [];
     let infoReponses = 0;
@@ -59,20 +61,15 @@ fetch('../public/assets/data/questions.json')
         // et ses réponses
         $('#lesReponses').empty();
 
-        console.log(game, wad, web);
-
-
         for (let i = 0; i < data.questions[prochainId].reponses.length; i++) {
           const reponse = data.questions[prochainId].reponses[i];
           const uneReponse = $(`<button id='${prochainId}'></button>`);
-          uneReponse.click(function () {
-            console.log(this.id);
+          uneReponse.click(() => {
             aAJouterGame = reponse.game;
             aAjouterWad = reponse.wad;
             aAjouterWeb = reponse.web;
-            console.log(aAJouterGame, aAjouterWad, aAjouterWeb);
+            aAjouterOther = reponse.other;
 
-            // console.log(data.questions[prochainId].question, reponse.rep);
 
             infoReponses = [data.questions[prochainId].question, reponse.rep];
           });
@@ -83,10 +80,36 @@ fetch('../public/assets/data/questions.json')
         }
         x++;
       }
+
+      if (x === data.questions.length - 1) {
+        console.log('fin');
+        if (game > wad && game > web) {
+          if (other > 7) {
+            console.log('OTHER');
+          } else {
+            console.log('GAME');
+          }
+        } else if (wad > game && wad > web) {
+          if (other > 7) {
+            console.log('OTHER');
+          } else {
+            console.log('WAD');
+          }
+        } else if (web > wad && web > game) {
+          if (other > 7) {
+            console.log('OTHER');
+          } else {
+            console.log('WEB');
+          }
+        } else {
+          console.log('OTHER');
+        }
+      }
       game += aAJouterGame;
       wad += aAjouterWad;
       web += aAjouterWeb;
-      console.log(game, wad, web);
+      other += aAjouterOther;
+      console.log(game, wad, web, other);
 
       lesReponses.push(infoReponses);
       console.log(lesReponses);
