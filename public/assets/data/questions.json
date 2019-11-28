@@ -7,19 +7,19 @@
                 {
                     "rep":"L’expérience utilisateur au top. " ,
                     "game": 1,
-                    "wad": 2,
+                    "wad": 0,
                     "web": 1
                 },
                 {
                     "rep": "L’anticipation de possibles bugs." ,
                     "game": 1,
-                    "wad": 2,
+                    "wad": 10,
                     "web": 1
                 },
                 {
                     "rep": "L’aspect visuel dont on se souviendra. ",
                     "game": 1,
-                    "wad": 2,
+                    "wad": 20,
                     "web": 1
                 }
             ]
@@ -32,19 +32,19 @@
                     "rep": "Einstein n’a-t-il pas dit : \"Si la vue d'un bureau encombré évoque un esprit encombré alors que penser de celle d'un bureau vide ?\"… à bon entendeur… ",
                     "game": 1,
                     "wad": 2,
-                    "web": 1
+                    "web": 3
                 },
                 {
                     "rep": "Les todos listes c’est mon dada.",
                     "game": 1,
                     "wad": 2,
-                    "web": 1
+                    "web": 4
                 },
                 {
                     "rep": "Entre minimalisme et anarchie, mon cœur balance.",
                     "game": 1,
                     "wad": 2,
-                    "web": 1
+                    "web": 5
                 }
             ]
         }, 
@@ -53,20 +53,20 @@
             "question": "Es-tu gameuse ? ",
             "reponses": [
                 {
-                    "rep": "Ca m’est arrivé, Mario quelques chose je crois…",
-                    "game": 1,
+                    "rep": "Ca m’est arrivé, Mario ça me dit quelque chose…",
+                    "game": 5,
                     "wad": 2,
                     "web": 1
                 },
                 {
                     "rep": "Ce qualificatif a été inventé pour moi. ",
-                    "game": 1,
+                    "game": 6,
                     "wad": 2,
                     "web": 1
                 },
                 {
                     "rep": " A mes heures perdues. ",
-                    "game": 1,
+                    "game": 7,
                     "wad": 2,
                     "web": 1
                 }

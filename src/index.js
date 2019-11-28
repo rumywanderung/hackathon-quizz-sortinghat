@@ -21,7 +21,11 @@ fetch('../public/assets/data/questions.json')
     let wad = 0;
     let web = 0;
 
-    const lesReponse = [];
+    let aAJouterGame = 0;
+    let aAjouterWad = 0;
+    let aAjouterWeb = 0;
+
+    const lesReponses = [];
 
 
     // passer d'une question à l'autre
@@ -47,22 +51,49 @@ fetch('../public/assets/data/questions.json')
 
       // et ses réponses
       $('#lesReponses').empty();
-      (data.questions[prochainId].reponses).forEach((reponse) => {
-        $('#lesReponses').append(
-          `<div>
-            <input type="radio" id="question${data.questions[prochainId].id}" value="" name="">
-            <label for="${reponse.rep}">${reponse.rep}</label>
-            </div>`,
-        );
-        console.log(`question #${data.questions[prochainId].id + 1}`);
-      });
+      // (data.questions[prochainId].reponses).forEach((reponse) => {
+      //   $('#lesReponses').append(
+      //     `<div>
+      //       <input type="radio" id="question${data.questions[prochainId].id}" value="" name="">
+      //       <label for="${reponse.rep}">${reponse.rep}</label>
+      //       </div>`,
+      //   );
+      //   console.log(`question #${data.questions[prochainId].id + 1}`);
+      // });
+
+      // aAJouterGame = 0;
+      // aAjouterWad = 0;
+      // aAjouterWeb = 0;
+
       console.log(game, wad, web);
-      game += data.questions[prochainId].reponses[0].game;
-      wad += data.questions[prochainId].reponses[0].wad;
-      web += data.questions[prochainId].reponses[0].web;
-      // à changer lsq bouron radion sera réparé
-      lesReponse.push([(data.questions[prochainId].question), (data.questions[prochainId].reponses[0].rep)]);
+
+      const infoReponses = [];
+
+      for (let i = 0; i < data.questions[prochainId].reponses.length; i++) {
+        const reponse = data.questions[prochainId].reponses[i];
+        const uneReponse = $(`<button id='${prochainId}'></button>`);
+        uneReponse.click(function () {
+          console.log(this.id);
+          aAJouterGame = reponse.game;
+          aAjouterWad = reponse.wad;
+          aAjouterWeb = reponse.web;
+          console.log(aAJouterGame, aAjouterWad, aAjouterWeb);
+
+          // console.log(data.questions[prochainId].question, reponse.rep);
+
+          infoReponses[i] = [data.questions[prochainId].question, reponse.rep];
+        });
+
+
+        uneReponse.text(reponse.rep);
+        $('#lesReponses').append(uneReponse);
+      }
+      game += aAJouterGame;
+      wad += aAjouterWad;
+      web += aAjouterWeb;
       console.log(game, wad, web);
-      console.log(lesReponse);
+
+      lesReponses.push(infoReponses);
+      console.log(lesReponses);
     });
   });
