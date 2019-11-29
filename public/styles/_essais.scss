@@ -67,13 +67,3 @@ section:nth-child(odd){
     background-color: coral;
 }
 
-select, input, textarea {
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-}
-input[type="radio"] { -webkit-appearance: radio !important; }
-input[type="radio"] {
-    height:16px !important;
-    -moz-appearance: radio !important;
-    }
