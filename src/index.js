@@ -113,7 +113,7 @@ fetch('../public/assets/data/questions.json')
           if (other > 10) {
             $j('#affichage').html(`
             <p>
-            Félicitations ! <br /> D'après nos estimations, tu ne serais probablement pas trop à ta place dans une des 3 formations que ce quiz propose. Néanmoins, ton intérêt des métiers de l'informatique ne s'arrête pas ici. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/se-former">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. <br /><br />${disclaimer}
+            Félicitations ! <br />D'après nos estimations, tu ne serais probablement pas trop à ta place dans une des 3 formations que ce quiz propose, ou notre test a failli à sa tâche :) Néanmoins, ton intérêt des métiers de l'informatique ne s'arrête pas ici. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/se-former">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. <br /><br />${disclaimer}
             </p>
             `);
           } else {
@@ -128,7 +128,7 @@ fetch('../public/assets/data/questions.json')
           if (other > 10) {
             $j('#affichage').html(`
             <p>
-            Félicitations ! <br />D'après nos estimations, tu ne serais probablement pas trop à ta place dans une des 3 formations que ce quiz propose. Néanmoins, ton intérêt des métiers de l'informatique ne s'arrête pas ici. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/se-former">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. <br /><br />${disclaimer}
+            Félicitations ! <br />D'après nos estimations, tu ne serais probablement pas trop à ta place dans une des 3 formations que ce quiz propose, ou notre test a failli à sa tâche :) Néanmoins, ton intérêt des métiers de l'informatique ne s'arrête pas ici. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/se-former">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. <br /><br />${disclaimer}
             </p>
             `);
           } else {
@@ -142,7 +142,7 @@ fetch('../public/assets/data/questions.json')
           if (other > 10) {
             $j('#affichage').html(`
             <p>
-            Félicitations ! <br />D'après nos estimations, tu ne serais probablement pas trop à ta place dans une des 3 formations que ce quiz propose. Néanmoins, ton intérêt des métiers de l'informatique ne s'arrête pas ici. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/se-former">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. <br /><br />${disclaimer}
+            Félicitations ! <br />D'après nos estimations, tu ne serais probablement pas trop à ta place dans une des 3 formations que ce quiz propose, ou notre test a failli à sa tâche :) Néanmoins, ton intérêt des métiers de l'informatique ne s'arrête pas ici. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/se-former">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. <br /><br />${disclaimer}
             </p>
             `);
           } else {
@@ -155,7 +155,7 @@ fetch('../public/assets/data/questions.json')
         } else {
           $j('#affichage').html(`
           <p>
-          Félicitations ! <br />D'après nos estimations, tu ne serais probablement pas trop à ta place dans une des 3 formations que ce quiz propose. Néanmoins, ton intérêt des métiers de l'informatique ne s'arrête pas ici. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/se-former">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. <br /><br />${disclaimer}
+          Félicitations ! <br />D'après nos estimations, tu ne serais probablement pas trop à ta place dans une des 3 formations que ce quiz propose, ou notre test a failli à sa tâche :) Néanmoins, ton intérêt des métiers de l'informatique ne s'arrête pas ici. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/se-former">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. <br /><br />${disclaimer}
           </p>
           `);
         }
