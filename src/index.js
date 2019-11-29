@@ -1,4 +1,9 @@
 import $ from 'jquery';
+var $j = jQuery.noConflict();
+
+$j( function() {
+  $j( "#draggable" ).draggable();
+} );
 
 fetch('../public/assets/data/questions.json')
   .then((questions) => questions.json())

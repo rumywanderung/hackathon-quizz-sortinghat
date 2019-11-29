@@ -1,26 +1,106 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Quizz - Sorting Hat</title>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700&display=swap" rel="stylesheet">
+  
+  
+</head>
+<body>
+    <header></header>
+    <body>
+        <main class="window-top">
+            <!-- Header Desktop -->
+            <div class="header-desktop">
+                    <div>
+                      <i class="fab fa-apple"></i> 
+                      <span class="bold">Finder</span>
+                      <span>File</span>
+                      <span>Edit</span>
+                      <span>View</span>
+                      <span>Go</span>
+                      <span>Window</span>
+                      <span>Help</span>
+                    </div>
+                    <div>
+                      <i class="fas fa-clock"></i>
+                      <i class="fab fa-bluetooth-b"></i>
+                      <i class="fas fa-wifi"></i>
+                      <i class="fas fa-volume-down"></i>
+                      <i class="fas fa-battery-quarter"></i>
+                      <span>Ve. 28 novembre 2019</span>
+                      <i class="fas fa-search"></i>
+                    </div>
+                  </div>
+            <!-- End Header Desktop -->
+          
+            <!-- Main window -->
+            <div class="window ui-widget-content" id="draggable">
+                <div class="header">
+                
+                    <div class="title-container">
+                        <div class="ball-container">
+                        <div class="ball red"></div>
+                        <div class="ball yellow"></div>
+                        <div class="ball green"></div>
+                    </div>
+                        <div class="title">Quizz.txt</div>
+                    </div>               
+                </div>
+                
+            <!-- Quizz -->
+            <div id="affichage">
+              <p>Bienvenue ! Réponds aux questions suivantes afin de découvrir quelle formation est faite pour toi !</p>
+              <div id="lesReponses">
       
-  </head>
-  <body>
-    <!-- <section></section> -->
-      <main id="affichage">
-        <p>Bienvenue pour l'orientation</p>
-        <div id="lesReponses">
+              </div>
+              <button id="soumettre">Allons-y !</button>
+            </div>
+            <!-- End Quizz -->
+            </div>
+            <!-- End Main window -->
 
+            <!-- Taskbar -->
+          <div class="perspective">
+             <div class="taskbar">
+            </div>
+          </div>
+          <div class="icons">             
+            <img class="img18" src="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/1024/Finder_5122x.png" alt="">
+            <img class="img16" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Store-256.png" alt="">
+              <img class="img15" src="https://media.idownloadblog.com/wp-content/uploads/2016/01/safari-icon.png" alt="">
+              <img class="img14" src="https://cdn2.iconfinder.com/data/icons/apple-ios7-icons/118/music_ios7_ios_7.png" alt="">
+              <img class="img13" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Stock-512.png" alt="">
+            <img class="img12" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Reminders-256.png" alt="">
+            <img class="img11" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Health-256.png" alt="">
+            
+            <img class="img10" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Phone-256.png" alt="">
+            <img class="img9" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Books-256.png" alt="">
+            <img class="img8" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Camera-256.png" alt="">
+            <img class="img7" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Photos-256.png" alt="">
+            <img class="img6" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Twitter-256.png" alt="">
+            <img class="img5" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Note-256.png" alt="">
+            <img class="img4" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Settings-256.png" alt="">
+            <img class="img3" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_iTunes-256.png" alt="">
+            <img class="img2" src="https://cdn2.iconfinder.com/data/icons/apple-ios7-icons/118/contacts_ios7_ios_7.png" alt="">
+            <img class="img1" src="http://cdn.osxdaily.com/wp-content/uploads/2010/07/512-TrashIcon-macosx1.png" alt="">
         </div>
-        <button id="soumettre">Allons-y !</button>
-      </main>
+              
+           
+            <!-- End Taskbar -->
+        </main>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="../src/index.js"></script>
     </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <footer></footer>
+</body>
 </html>
