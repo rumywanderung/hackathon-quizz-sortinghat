@@ -34,8 +34,8 @@ fetch('../public/assets/data/questions.json')
     // passer d'une question à l'autre
     // ///////////////////////////////
 
-    // test
-    let x = 0;
+    // compteur questions
+    let compteurQuestion = 0;
 
     $('#soumettre').click(() => {
       // si page d'acceuil
@@ -47,13 +47,8 @@ fetch('../public/assets/data/questions.json')
         prochainId += 1;
       }
 
-      // test
-      if (x < data.questions.length) {
-        // changer de fond de façon smooth
-        // $('html,body').animate({
-        //   scrollTop: $(`#question${prochainId}`).offset().top,
-        // }, 1000);
-
+      // siil y a encore des questions
+      if (compteurQuestion < data.questions.length) {
         // aller à la question (suivante)
         // afficher la question
         $('#affichage p').text(data.questions[prochainId].question);
@@ -61,29 +56,41 @@ fetch('../public/assets/data/questions.json')
         // et ses réponses
         $('#lesReponses').empty();
 
+        // pour chaque réponse possible
         for (let i = 0; i < data.questions[prochainId].reponses.length; i++) {
           const reponse = data.questions[prochainId].reponses[i];
+          // la mettre dans un boutton
           const uneReponse = $(`<button id='${prochainId}'></button>`);
+          // lorsqu'on le click
           uneReponse.click(() => {
+            // stockage de points dans compteurs
             aAJouterGame = reponse.game;
             aAjouterWad = reponse.wad;
             aAjouterWeb = reponse.web;
             aAjouterOther = reponse.other;
 
-
+            // question et reponse choisie sont stockés
             infoReponses = [data.questions[prochainId].question, reponse.rep];
+
+            // on peut clicker sur suivant
+            $('#soumettre').attr('disabled', false);
           });
 
-
+          // texte de la reponse
           uneReponse.text(reponse.rep);
+          // ajout de la reponse
           $('#lesReponses').append(uneReponse);
         }
-        x++;
+
+        // incrémentation du compteur de quetsion
+        compteurQuestion++;
+
+        // on ne peut pas clicker sur suivant tant qu'on n'a pas séléctionné de réponse
+        $('#soumettre').attr('disabled', true);
       }
 
-      if (x === data.questions.length - 1) {
-        console.log('fin');
-        $('#soumettre').attr('disabled', true);
+      // si c'est la dernière question
+      if (compteurQuestion === data.questions.length - 1) {
         if (game > wad && game > web) {
           if (other > 7) {
             $('#affichage').html(`
