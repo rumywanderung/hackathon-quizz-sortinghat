@@ -3,13 +3,6 @@ import $ from 'jquery';
 fetch('../public/assets/data/questions.json')
   .then((questions) => questions.json())
   .then((data) => {
-    // pour chaque question créer une div colorée par le css
-    // /////////////////////////////////////////////////////
-    // data.questions.forEach((question) => {
-    //   $('body').append(`<section id="question${question.id}"></section>`);
-    // });
-
-
     // compteur pour l'id
     // //////////////////
     let prochainId = 0;
@@ -56,9 +49,18 @@ fetch('../public/assets/data/questions.json')
         // et ses réponses
         $('#lesReponses').empty();
 
+
+        // copier les réponses dans un tableau
+        const tableauDeReponses = data.questions[prochainId].reponses;
+
+        // melanger les réponses avant de les afficher
+        tableauDeReponses.sort(() => (Math.random() - 0.5));
+
         // pour chaque réponse possible
-        for (let i = 0; i < data.questions[prochainId].reponses.length; i++) {
-          const reponse = data.questions[prochainId].reponses[i];
+        for (let i = 0; i < tableauDeReponses.length; i++) {
+          const reponse = tableauDeReponses[i];
+          // console.log('REPONSE');
+          // console.log(reponse);
           // la mettre dans un boutton
           const uneReponse = $(`<button id='${prochainId}'></button>`);
           // lorsqu'on le click
