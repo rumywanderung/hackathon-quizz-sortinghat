@@ -1,106 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700&display=swap" rel="stylesheet">
-  
-  
-</head>
-<body>
-    <header></header>
-    <body>
-        <main class="window-top">
-            <!-- Header Desktop -->
-            <div class="header-desktop">
-                    <div>
-                      <i class="fab fa-apple"></i> 
-                      <span class="bold">Finder</span>
-                      <span>File</span>
-                      <span>Edit</span>
-                      <span>View</span>
-                      <span>Go</span>
-                      <span>Window</span>
-                      <span>Help</span>
-                    </div>
-                    <div>
-                      <i class="fas fa-clock"></i>
-                      <i class="fab fa-bluetooth-b"></i>
-                      <i class="fas fa-wifi"></i>
-                      <i class="fas fa-volume-down"></i>
-                      <i class="fas fa-battery-quarter"></i>
-                      <span>Ve. 28 novembre 2019</span>
-                      <i class="fas fa-search"></i>
-                    </div>
-                  </div>
-            <!-- End Header Desktop -->
-          
-            <!-- Main window -->
-            <div class="window ui-widget-content" id="draggable">
-                <div class="header">
-                
-                    <div class="title-container">
-                        <div class="ball-container">
-                        <div class="ball red"></div>
-                        <div class="ball yellow"></div>
-                        <div class="ball green"></div>
-                    </div>
-                        <div class="title">Quizz.txt</div>
-                    </div>               
-                </div>
-                
-            <!-- Quizz -->
-            <div id="affichage">
-              <p>Bienvenue ! Réponds aux questions suivantes afin de découvrir quelle formation est faite pour toi !</p>
-              <div id="lesReponses">
-      
-              </div>
-              <button id="soumettre">Allons-y !</button>
-            </div>
-            <!-- End Quizz -->
-            </div>
-            <!-- End Main window -->
+  <!-- ANIMATION-->
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
+  <!-- CSS/ ICONS-->
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="shortcut icon" type="image/svg" href="LogoFavIcon.svg" />
+  <link rel="shortcut icon" type="image/svg" href="LogoFavIcon.svg" />
 
-            <!-- Taskbar -->
-          <div class="perspective">
-             <div class="taskbar">
-            </div>
+  <meta name="theme-color" content="#fafafa">
+
+  <title>InterQuizz</title>
+</head>
+
+<body>
+  <header>
+    <!--    NAVIGATION  -->
+    <nav>
+      <div class="nav-wrapper #9fa8da indigo lighten-3">
+        <img class="logo " src="/assets/images/logo.svg"><a href="index.html" class="brand-logo"></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="https://www.interface3.be/" target="_blank">INTERFACE 3</a></li>
+          <li><a href="#formations">FORMATIONS</a></li>
+          <li><a href="#aboutus">ABOUT US</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--    NAVIGATION FIN  -->
+  </header>
+
+  <main class="window-top">
+    <!-- Header Desktop -->
+    <div class="header-desktop">
+      <div>
+        <i class="fab fa-apple"></i>
+        <span class="bold">Finder</span>
+        <span>File</span>
+        <span>Edit</span>
+        <span>View</span>
+        <span>Go</span>
+        <span>Window</span>
+        <span>Help</span>
+      </div>
+      <div>
+        <i class="fas fa-clock"></i>
+        <i class="fab fa-bluetooth-b"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-volume-down"></i>
+        <i class="fas fa-battery-quarter"></i>
+        <span>Ve. 28 novembre 2019</span>
+        <i class="fas fa-search"></i>
+      </div>
+    </div>
+    <!-- End Header Desktop -->
+
+    <!-- Main window -->
+    <div class="window ui-widget-content" id="draggable">
+      <div class="header">
+
+        <div class="title-container">
+          <div class="ball-container">
+            <div class="ball red"></div>
+            <div class="ball yellow"></div>
+            <div class="ball green"></div>
           </div>
-          <div class="icons">             
-            <img class="img18" src="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/1024/Finder_5122x.png" alt="">
-            <img class="img16" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Store-256.png" alt="">
-              <img class="img15" src="https://media.idownloadblog.com/wp-content/uploads/2016/01/safari-icon.png" alt="">
-              <img class="img14" src="https://cdn2.iconfinder.com/data/icons/apple-ios7-icons/118/music_ios7_ios_7.png" alt="">
-              <img class="img13" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Stock-512.png" alt="">
-            <img class="img12" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Reminders-256.png" alt="">
-            <img class="img11" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Health-256.png" alt="">
-            
-            <img class="img10" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Phone-256.png" alt="">
-            <img class="img9" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Books-256.png" alt="">
-            <img class="img8" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Camera-256.png" alt="">
-            <img class="img7" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Photos-256.png" alt="">
-            <img class="img6" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Twitter-256.png" alt="">
-            <img class="img5" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Note-256.png" alt="">
-            <img class="img4" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Settings-256.png" alt="">
-            <img class="img3" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_iTunes-256.png" alt="">
-            <img class="img2" src="https://cdn2.iconfinder.com/data/icons/apple-ios7-icons/118/contacts_ios7_ios_7.png" alt="">
-            <img class="img1" src="http://cdn.osxdaily.com/wp-content/uploads/2010/07/512-TrashIcon-macosx1.png" alt="">
+          <div class="title">Quizz.txt</div>
         </div>
-              
-           
-            <!-- End Taskbar -->
-        </main>
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script src="../src/index.js"></script>
-    </body>
-    <footer></footer>
+      </div>
+
+      <!-- Quizz -->
+      <div id="affichage">
+        <p>Bienvenue ! Réponds aux questions suivantes afin de découvrir quelle formation est faite pour toi !</p>
+        <div id="lesReponses">
+
+        </div>
+        <button id="soumettre">Allons-y !</button>
+      </div>
+      <!-- End Quizz -->
+    </div>
+    <!-- End Main window -->
+
+    <!-- Taskbar -->
+    <div class="perspective">
+      <div class="taskbar">
+      </div>
+    </div>
+    <div class="icons">
+      <img class="img18" src="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/1024/Finder_5122x.png"
+        alt="">
+      <img class="img16" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Store-256.png" alt="">
+      <img class="img15" src="https://media.idownloadblog.com/wp-content/uploads/2016/01/safari-icon.png" alt="">
+      <img class="img14" src="https://cdn2.iconfinder.com/data/icons/apple-ios7-icons/118/music_ios7_ios_7.png" alt="">
+      <img class="img13" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Stock-512.png" alt="">
+      <img class="img12" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Reminders-256.png" alt="">
+      <img class="img11" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Health-256.png" alt="">
+
+      <img class="img10" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Phone-256.png" alt="">
+      <img class="img9" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Books-256.png" alt="">
+      <img class="img8" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Camera-256.png" alt="">
+      <img class="img7" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Photos-256.png" alt="">
+      <img class="img6" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Twitter-256.png" alt="">
+      <img class="img5" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Note-256.png" alt="">
+      <img class="img4" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Settings-256.png" alt="">
+      <img class="img3" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_iTunes-256.png" alt="">
+      <img class="img2" src="https://cdn2.iconfinder.com/data/icons/apple-ios7-icons/118/contacts_ios7_ios_7.png"
+        alt="">
+      <img class="img1" src="http://cdn.osxdaily.com/wp-content/uploads/2010/07/512-TrashIcon-macosx1.png" alt="">
+    </div>
+
+
+    <!-- End Taskbar -->
+  </main>
+
+  <div id="computer"></div>
+  
+  <main class="window-bottom">
+
+    <!--    FRONT PAGE   -->
+
+    <section id="front-page">
+      <h1>Quelle formation est <br> faite pour vous ? <br>
+        Faites le quizz dès maintenant <br>pour le savoir !</h1>
+      <a class="waves-effect waves-light btn-large #7cb342 light-green darken-1" id="btn">JOUER</a>
+    </section>
+    <div class="container">
+
+
+
+      <!--    FORMATIONS   -->
+      <section id="formations">
+        <h2>FORMATIONS</h2>
+        <div class="row">
+          <h3>Front-End Developer</h3>
+          <div class="col s6">
+            <p>Par « front-end », on désigne tout ce qui s’affiche à l’écran d’un site web : d’un côté son aspect visuel
+              (couleurs, polices, images, etc.), de l’autre les éléments avec lesquels on peut interagir via un
+              navigateur :menus déroulants, boutons, formulaires, etc.
+              Réalisée via des langages sophistiqués, l’apparence des sites et des applications web est aujourd’hui le
+              résultat de compétences autant techniques que créatives.
+
+              Contrairement au développeur back-end dont le travail se déroule dans les coulisses du web, vous, vous
+              êtes en première ligne avec vos réalisations !
+              En tant que webmaster vous créez les sites et les applications Internet et vous les rendez ergonomiques et
+              accessibles par les internautes en développant une interface claire, rapide et facile à utiliser. Et ce,
+              tout en répondant aux normes du W3C pour une navigation aisée quels que soient les navigateurs et les
+              supports utilisés (desktop, tablette, smartphone, etc.).
+              Entre programmation et communication visuelle, vous jouez un rôle de premier plan dans l’économie
+              numérique
+            </p>
+          </div>
+          <div class="col s6">
+            <img class="image-resize" src="assets/images/Névtelen.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="row">
+          <h3>Web Application Developer</h3>
+          <div class="col s6">
+
+            <img src="/assets/images/backend.jpg" alt="">
+          </div>
+          <div class="col s6">
+            <p>Entre la fonction de webmaster et celle de programmeur, les web developers conçoivent aujourd’hui de
+              nombreuses applications via des technologies de programmation très sophistiquées.
+              Lorsqu’un développeur maîtrise les technologies back-end et front-end, on le désigne « full stack
+              developer ».
+              Par ailleurs, l’évolution des technologies (cloud, vitesse d’accès à l’Internet) eff ace la frontière
+              entre le logiciel classique et l’application web offrant les mêmes fonctionnalités : tableurs, logiciels
+              de présentation, agendas partagés, etc.
+              Les progrès du développement web et la multiplication des supports mobiles transforment nos habitudes
+              technologiques. D’autres nouveautés verront le jour dans les prochaines années : la révolution de
+              l’Internet est loin d’être terminée !
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <h3>Game Developer</h3>
+          <div class="col s6">
+            <p>Aujourd’hui, le secteur des jeux vidéo génère dans le monde un chiffre d’affaires supérieur aux
+              industries du cinéma et de la musique.
+              Cette impressionnante croissance est due entre autres à l’évolution rapide des technologies, à la
+              multiplication des supports (distribution digitale, web, smartphones, tablettes, …) et aux mutations dans
+              la sphère de nos loisirs.
+
+              Par ailleurs, les techniques et formes propres aux jeux vidéo commencent à conquérir une série de domaines
+              originaux tels que l’éducation, la publicité, la muséographie, la recherche scientifique, la robotique,
+              etc.
+
+              Notre futur sera fortement influencé par les innovations conçues aujourd’hui par les développeurs de jeux
+              vidéo, notamment en termes de réalisme graphique, d’ergonomie et d’interaction entre homme et
+              machine.nouveautés verront le jour dans les prochaines années : la révolution de l’Internet est loin
+              d’être terminée !
+            </p>
+          </div>
+          <div class="col s6">
+            <img src="/assets/images/Videogame.png" alt="">
+          </div>
+        </div>
+
+
+
+      </section>
+
+      <!--    ABOUT US   -->
+      <section id="aboutus">
+        <h2>ABOUT US</h3>
+          <!-- <ul class="collapsible popout">
+            <li>
+              <div class="collapsible-header name #f48fb1 pink lighten-4"><i class="material-icons">games</i>Roumi</div>
+              <div class="collapsible-body white"><span><img src="">It's  ROUMIIIIIIIIIIIIIII.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header name #9fa8da indigo lighten-4"><i class="material-icons">star</i>Aki</div>
+              <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header name #b39ddb deep-purple lighten-4"><i class="material-icons">favorite</i>Yun</div>
+              <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header name #c5cae9 #b2dfdb teal lighten-4"><i class="material-icons">whatshot</i>Sylvie</div>
+                <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
+              </li>
+              <li>
+                  <div class="collapsible-header name #c8e6c9 green lighten-4"><i class="material-icons">brightness_2</i>Pokora</div>
+                  <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header name #fff9c4 yellow lighten-4"><i class="material-icons ">movie</i>Jess</div>
+                    <div class="collapsible-body white"><span>Je vais y reflechir</span></div>
+                  </li>
+                  <li>
+                      <div class="collapsible-header name #ffccbc deep-orange lighten-4"><i class="material-icons">brush</i>Spooky</div>
+                      <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+          </ul> -->
+      </section>
+    </div>
+  </main>
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="../src/index.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+      window.ga = function () {
+        ga.q.push(arguments)
+      };
+      ga.q = [];
+      ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto');
+      ga('set', 'transport', 'beacon');
+      ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
+  
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
+    <script src="../src/main.js"></script>
+    <script src="../src/plugins.js"></script>
 </body>
+<footer></footer>
+
 </html>

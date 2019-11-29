@@ -1,4 +1,3 @@
-import $ from 'jquery';
 var $j = jQuery.noConflict();
 
 $j( function() {
@@ -35,11 +34,11 @@ fetch('../public/assets/data/questions.json')
     // compteur questions
     let compteurQuestion = 0;
 
-    $('#soumettre').click(() => {
+    $j('#soumettre').click(() => {
       // si page d'acceuil
-      if ($('#soumettre').text() === 'Allons-y !') {
+      if ($j('#soumettre').text() === 'Allons-y !') {
         // changer texte du bouton
-        $('#soumettre').text('suivant');
+        $j('#soumettre').text('suivant');
         // sinon incrémenter le prochain id
       } else {
         prochainId += 1;
@@ -49,10 +48,10 @@ fetch('../public/assets/data/questions.json')
       if (compteurQuestion < data.questions.length) {
         // aller à la question (suivante)
         // afficher la question
-        $('#affichage p').text(data.questions[prochainId].question);
+        $j('#affichage p').text(data.questions[prochainId].question);
 
         // et ses réponses
-        $('#lesReponses').empty();
+        $j('#lesReponses').empty();
 
 
         // copier les réponses dans un tableau
@@ -67,7 +66,7 @@ fetch('../public/assets/data/questions.json')
           // console.log('REPONSE');
           // console.log(reponse);
           // la mettre dans un boutton
-          const uneReponse = $(`<button id='${prochainId}'></button>`);
+          const uneReponse = $j(`<button id='${prochainId}'></button>`);
           // lorsqu'on le click
           uneReponse.click(() => {
             // stockage de points dans compteurs
@@ -80,71 +79,72 @@ fetch('../public/assets/data/questions.json')
             infoReponses = [data.questions[prochainId].question, reponse.rep];
 
             // on peut clicker sur suivant
-            $('#soumettre').attr('disabled', false);
+            $j('#soumettre').attr('disabled', false);
           });
 
           // texte de la reponse
           uneReponse.text(reponse.rep);
           // ajout de la reponse
-          $('#lesReponses').append(uneReponse);
+          $j('#lesReponses').append(uneReponse);
         }
 
         // incrémentation du compteur de quetsion
         compteurQuestion++;
 
         // on ne peut pas clicker sur suivant tant qu'on n'a pas séléctionné de réponse
-        $('#soumettre').attr('disabled', true);
+        $j('#soumettre').attr('disabled', true);
       }
 
       // si c'est la dernière question
       if (compteurQuestion === data.questions.length - 1) {
+        const disclaimer = 'DISCLAIMER: Ce quiz n\'est pas une analyse scientifique et sans faille. ';
         if (game > wad && game > web) {
           if (other > 7) {
-            $('#affichage').html(`
+            $j('#affichage').html(`
             <p>
-            Félicitations ! D'après nos estimations, tu ne serais probablement pas trop à ta place dans une des 3 formations que ce quiz propose. Néanmoins, ton intérêt des métiers de l'informatique ne s'arrête pas ici. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/se-former">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. 
+            Félicitations ! <br /> D'après nos estimations, tu ne serais probablement pas trop à ta place dans une des 3 formations que ce quiz propose. Néanmoins, ton intérêt des métiers de l'informatique ne s'arrête pas ici. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/se-former">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. <br /><br />${disclaimer}
             </p>
             `);
           } else {
             console.log('GAME');
-            $('#affichage').html(`
+            $j('#affichage').html(`
             <p>
-            Félicitations ! D'après nos estimations, tu te plairais à coup sûr dans une formation de Game Developer. En effet ton esprit débordant de créativité, ta passion du storytelling et des expériences ludiques ainsi que ton côté 'débrouillarde' sont des qualités prisées dans l'industrie du jeux vidéo. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/formation/game-developer">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. 
+            Félicitations ! <br />D'après nos estimations, tu te plairais à coup sûr dans une formation de GAME DEVELOPER. En effet ton esprit débordant de créativité, ta passion du storytelling et des expériences ludiques ainsi que ton côté 'débrouillarde' sont des qualités prisées dans l'industrie du jeux vidéo. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/formation/game-developer">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. <br /><br />${disclaimer}
             </p>
             `);
           }
         } else if (wad > game && wad > web) {
           if (other > 7) {
-            $('#affichage').html(`
+            $j('#affichage').html(`
             <p>
-            Félicitations ! D'après nos estimations, tu ne serais probablement pas trop à ta place dans une des 3 formations que ce quiz propose. Néanmoins, ton intérêt des métiers de l'informatique ne s'arrête pas ici. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/se-former">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. 
+            Félicitations ! <br />D'après nos estimations, tu ne serais probablement pas trop à ta place dans une des 3 formations que ce quiz propose. Néanmoins, ton intérêt des métiers de l'informatique ne s'arrête pas ici. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/se-former">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. <br /><br />${disclaimer}
             </p>
             `);
           } else {
-            $('#affichage').html(`
+            $j('#affichage').html(`
             <p>
-            Félicitations ! D'après nos estimations, tu te plairais à coup sûr dans une formation de WEB-APPLICATIONS DEVELOPER. En effet ton esprit analytique, ta franchise et ton goût du minimalisme sont des qualités prisées dans ce domaine dit du "back-end". \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/formation/web-application-developer">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. 
+            Félicitations !<br />D'après nos estimations, tu te plairais à coup sûr dans une formation de WEB-APPLICATIONS DEVELOPER. En effet ton esprit analytique, ta franchise et ton goût du minimalisme sont des qualités prisées dans ce domaine dit du "back-end". \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/formation/web-application-developer">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. <br /><br />${disclaimer}
             </p>
             `);
           }
         } else if (web > wad && web > game) {
           if (other > 7) {
-            $('#affichage').html(`
+            $j('#affichage').html(`
             <p>
-            Félicitations ! D'après nos estimations, tu ne serais probablement pas trop à ta place dans une des 3 formations que ce quiz propose. Néanmoins, ton intérêt des métiers de l'informatique ne s'arrête pas ici. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/se-former">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. 
+            Félicitations ! <br />D'après nos estimations, tu ne serais probablement pas trop à ta place dans une des 3 formations que ce quiz propose. Néanmoins, ton intérêt des métiers de l'informatique ne s'arrête pas ici. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/se-former">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. <br /><br />${disclaimer}
             </p>
             `);
           } else {
-            $('#affichage').html(`
+            $j('#affichage').html(`
             <p>
-            Félicitations ! D'après nos estimations, tu te plairais à coup sûr dans une formation de Webmaster. En effet ton esprit curieux, ta prédisposition pour toutes choses design et ton sens inné de l'harmonie sont des qualités prisées dans ce domaine dit du "front-end".\nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/formation/webmaster">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. 
+            Félicitations ! <br />D'après nos estimations, tu te plairais à coup sûr dans une formation de WEBMASTER. En effet ton esprit curieux, ta prédisposition pour toutes choses design et ton sens inné de l'harmonie sont des qualités prisées dans ce domaine dit du "front-end".\nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/formation/webmaster">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. <br /><br />${disclaimer}
             </p>
             `);
           }
         } else {
-          $('#affichage').html(`
+          $j('#affichage').html(`
           <p>
-          Félicitations ! D'après nos estimations, tu ne serais probablement pas trop à ta place dans une des 3 formations que ce quiz propose. Néanmoins, ton intérêt des métiers de l'informatique ne s'arrête pas ici. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/se-former">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. 
+          Félicitations ! <br />D'après nos estimations, tu ne serais probablement pas trop à ta place dans une des 3 formations que ce quiz propose. Néanmoins, ton intérêt des métiers de l'informatique ne s'arrête pas ici. \nPour plus d'informations, n'hésite pas à consulter <a href="https://www.interface3.be/fr/se-former">ici</a> le descriptif détaillé de la formation, ainsi que ses nombreux débouchés. <br /><br />${disclaimer}
           </p>
           `);
         }

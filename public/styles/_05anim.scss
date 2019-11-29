@@ -1,0 +1,74 @@
+body {
+  background: #DBE6F6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C5796D, #DBE6F6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C5796D, #DBE6F6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
+#front-page {
+
+  background: url('/assets/images/projethackaton.png');
+  background-repeat: no-repeat;
+  width: 101.5vw;
+  height: 100vh;
+  margin: -42px;
+}
+
+h1 {
+  padding-top: 90px;
+  position: absolute;
+  color: white;
+  font-family: 'Bebas Neue';
+  font-size: 4em;
+  left: 1150px;
+  text-align: center;
+
+}
+
+
+h3 {
+  font-family: 'Bebas Neue';
+  color: black;
+  font-size: 3em;
+  text-align: center;
+
+}
+
+p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5em;
+
+}
+
+
+.name {
+  font-family: 'Satisfy', cursive;
+  font-size: 1.5em;
+}
+
+nav {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: -40px;
+}
+
+.image-resize {
+  max-width: 800px;
+  max-height: auto;
+}
+
+.btn-large {
+  position: absolute;
+  left: 1450px;
+  top: 425px;
+}
