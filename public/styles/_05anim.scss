@@ -11,12 +11,12 @@ body {
 }
 
 #front-page {
-
-  background: url('/assets/images/projethackaton.png');
+  background-image: url('./assets/images/projethackaton.png');
   background-repeat: no-repeat;
-  width: 101.5vw;
+  // width: 101.5vw;
   height: 100vh;
-  margin: -42px;
+  margin: -60px;
+  background-size: cover;
 }
 
 h1 {
@@ -25,10 +25,11 @@ h1 {
   color: white;
   font-family: 'Bebas Neue';
   font-size: 4em;
-  left: 1150px;
+  left: 1000px;
   text-align: center;
 
 }
+
 
 
 h3 {
@@ -63,12 +64,12 @@ nav {
 }
 
 .image-resize {
-  max-width: 800px;
+  max-width: 400px;
   max-height: auto;
 }
 
 .btn-large {
   position: absolute;
-  left: 1450px;
-  top: 425px;
+  left: 1270px;
+  top: 490px;
 }

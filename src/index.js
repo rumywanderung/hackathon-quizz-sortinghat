@@ -68,18 +68,29 @@ fetch('../public/assets/data/questions.json')
           // la mettre dans un boutton
           const uneReponse = $j(`<button id='${prochainId}'></button>`);
           // lorsqu'on le click
-          uneReponse.click(() => {
+          // $j(uneReponse).hover(
+          //   function() {
+          //     $j(this).css('background-color', '#BBDEFB');
+          //   }, function() {
+          //     $j(this).css('background-color', 'transparent');
+          //   }
+          // );
+          uneReponse.click(function () {
             // stockage de points dans compteurs
             aAJouterGame = reponse.game;
             aAjouterWad = reponse.wad;
             aAjouterWeb = reponse.web;
             aAjouterOther = reponse.other;
-
+            
             // question et reponse choisie sont stockés
             infoReponses = [data.questions[prochainId].question, reponse.rep];
 
             // on peut clicker sur suivant
             $j('#soumettre').attr('disabled', false);
+            console.log('prou');
+            $j('button').css('background-color', 'transparent');
+            $j(this).css('background-color', '#BBDEFB');
+            
           });
 
           // texte de la reponse
