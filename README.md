@@ -1,45 +1,43 @@
-# DEPRECATED
+# HACKATHON: Code 4 better life @ Interface3
 
-New seed repository, with consistent name: https://github.com/ltruchot/webpack-seed-js-sass
+Du 27 au 29 novembre, les stagiares des différentes formations informatiques orientées développement ont formé des groupes pour collobarer sur le thème précité.
 
-# Webpack Seed evergreen for JavaScript and SASS
+## Projet
 
-## This is an empty project to begin pure JavaScript + Sass front-end coding out of the box
+Ceci est un projet de quizz destiné aux futures stagiaires d'Interface3 et visant à les orienter au mieux dans l'une des formations informatiques suivantes:
+    - Web Application Developer
+    - Webmaster
+    - Game Developer
 
-NPM Last updated: Sept. 2019
+Il fait appel aux technologies du web pour l'infrastructure et le design attrayant, ainsi qu'à celles du game development afin de rendre l'expérience utilisateur plus ludique.
 
-Clean and classic webpack + eslint (airbnb rules) + babel + file loader scaffolding for real world ES6+ projects.
 
-`npm install` at your first use, then
+## Team
 
-`npm start` to develop your application
+Aurore (Game Developer)
+- animation webGL
+- logo
+Farah Badri (Game Developer)
+- dessins
+- identité visuelle
+Ferdawss Msaddaq (Webmaster)
+- visuel interface ordinateur ouvert
+- intégration
+Jessica Meerts (Webmaster)
+- logo
+- questions
+Roumiana Bourkova (Game Developer)
+- PORTEUSE DE PROJET
+- animation, webGL
+- gestion de projet
+Sylvie Numuhire (Web Application Developer)
+- js et json
+- intégration
+Yasmine Griha (Webmaster)
+- html et css
+- contenu
 
-`npm run build` to bundle your application. When it's done, deliver your `dist` folder: it contains anything needed.
 
-## index.js and other JS sources in "src" folder
+## seed, environnement de travail
 
-`./src/index.js` is the entry point for your ES6+ JavaScript. Scaffold your JS app sources in `./src` and import/export what you need.
-
-_Example: if function `add` is exported in file `./src/helpers/example.js` import it as `import { add } from "./helpers/example"` in `index.js`._
-
-## index.html and other HTML pages
-
-Webpack bundle every JavaScript from `./src` and used `./node_modules` in your final dist a main.js file, and load it automatically.
-
-Nevertheless, you can change what you want in its template `./public/index.html`, if you need a CDN link for example.
-
-You can add any new static html page in `./public/pages` and they will share the same CSS and scripts than `index.html`
-
-## Assets
-
-Put your static folders/files in `./public`. Webpack will raw-copy them in your final dist, never breaking your relative links.
-
-_Example: if an image is in `./public/assets/images/logo.png` reference it as `<img src="assets/images/logo.png">` in your codebase._
-
-## Change ESLint in the way you want
-
-`.eslintrc.js` follow Airbnb strict and helpful rules for deliver good quality/well formed code.
-
-Those standards are overidden for few rules (windows project, 80 chars per line, etc). You can remove/change thoses rules or add new in this `.eslintrc.js`.
-
-_Example change `'linebreak-style': ['error', 'windows']` to `'linebreak-style': ['error', 'unix']`_
+Un merci à Loic Truchot, pour la mise à disposition de la seed que nous avons utilisée (https://github.com/ltruchot/webpack-js-eslint-seed/).
