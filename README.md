@@ -39,7 +39,7 @@ Sylvie Numuhire (Web Application Developer)
 - js et json
 - intégration
 
-Yasmine Griha (Webmaster)
+Yasmina Griha (Webmaster)
 - html et css
 - contenu
 
