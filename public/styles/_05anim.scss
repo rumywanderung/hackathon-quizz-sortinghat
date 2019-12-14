@@ -13,18 +13,16 @@ body {
 #front-page {
   background-image: url('./assets/images/projethackaton.png');
   background-repeat: no-repeat;
-  // width: 101.5vw;
   height: 100vh;
-  margin: -60px;
-  background-size: cover;
+  background-size: 100%;
 }
 
 h1 {
-  padding-top: 90px;
+  padding-top: 1.5rem;
   position: absolute;
   color: white;
   font-family: 'Bebas Neue';
-  font-size: 4rem;
+  font-size: 2.5rem;
   left: 53vw;
   text-align: center;
 
@@ -70,6 +68,6 @@ nav {
 
 .btn-large {
   position: absolute;
-  left: 1270px;
-  top: 490px;
+  left: 64vw;
+  top: 19.5rem;
 }
