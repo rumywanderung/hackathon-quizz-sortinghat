@@ -19,7 +19,7 @@ Aurore (Game Developer)
 - logo
 
 Farah Badri (Game Developer)
-- dessins
+- illustrations
 - identité visuelle
 
 Ferdawss Msaddaq (Webmaster)
